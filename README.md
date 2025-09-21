@@ -53,22 +53,47 @@ Plan and achieve your financial goals:
 **Backend:** Django, Python, SQLite, Django REST Framework, JWT Authentication  
 **Frontend:** React, JavaScript (ES6+), CSS, Vite
 
-### 🏠 Sambhalo Home Page
-<img src="./demo/screenshot1.png" alt="Sambhalo Home" width="500"/>
+### 🏠 Screenshots
 
-### 🔐 Login Page
-<img src="./demo/screenshot2.png" alt="Login Page" width="500"/>
-
-### 📊 Finance Dashboard
-<img src="./demo/screenshot7.png" alt="Finance Dashboard 1" width="500"/>
-<img src="./demo/screenshot8.png" alt="Finance Dashboard 2" width="500"/>
-
-### 💸 Income Tracker
-<img src="./demo/screenshot3.png" alt="Income Tracker" width="500"/>
-
-### 🛒 Expense Tracker
-<img src="./demo/screenshot4.png" alt="Expense Tracker" width="500"/>
-
-### 🏦 Savings Tracker
-<img src="./demo/screenshot5.png" alt="Savings Tracker 1" width="500"/>
-<img src="./demo/screenshot6.png" alt="Savings Tracker 2" width="500"/>
+<table>
+  <tr>
+    <td align="center">
+      <b>Sambhalo Home</b><br>
+      <img src="demo/Screenshot1.png" alt="Sambhalo Home" width="500"/>
+    </td>
+    <td align="center">
+      <b>Login Page</b><br>
+      <img src="demo/Screenshot2.png" alt="Login Page" width="500"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Finance Dashboard 1</b><br>
+      <img src="demo/Screenshot7.png" alt="Finance Dashboard 1" width="500"/>
+    </td>
+    <td align="center">
+      <b>Finance Dashboard 2</b><br>
+      <img src="demo/Screenshot8.png" alt="Finance Dashboard 2" width="500"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Income Tracker</b><br>
+      <img src="demo/Screenshot3.png" alt="Income Tracker" width="500"/>
+    </td>
+    <td align="center">
+      <b>Expense Tracker</b><br>
+      <img src="demo/Screenshot4.png" alt="Expense Tracker" width="500"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Savings Tracker 1</b><br>
+      <img src="demo/Screenshot5.png" alt="Savings Tracker 1" width="500"/>
+    </td>
+    <td align="center">
+      <b>Savings Tracker 2</b><br>
+      <img src="demo/Screenshot6.png" alt="Savings Tracker 2" width="500"/>
+    </td>
+  </tr>
+</table>
