@@ -1,0 +1,87 @@
+:root{
+  --bg:#ffffff;
+  --card:#f9f9f9;
+  --muted:#8ea0b6;
+  --text:#727783;
+  --green:#2ecc71;
+  --red:#e74c3c;
+  --accent:#3b82f6;
+  --border:#242a33;
+}
+
+*{ box-sizing:border-box; }
+
+.fd-wrapper{
+  max-width:1200px;
+  margin:0 auto;
+  padding:24px;
+  color:var(--text);
+  background:var(--bg);
+  min-height:100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+}
+
+.fd-header{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.fd-header h1{
+  margin:0;
+  font-size:28px;
+  letter-spacing:0.2px;
+}
+
+.fd-kpis{
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.fd-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:16px;
+}
+
+.fd-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.fd-card h2{
+  margin:0 0 10px 0;
+  font-size:18px;
+  color:#727783;
+}
+
+.fd-empty{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.fd-savings-totals{
+  display:flex;
+  gap:20px;
+  margin-top:12px;
+  color:var(--muted);
+}
+
+.fd-green{ color:var(--green); }
+
+@media (max-width: 980px){
+  .fd-kpis{ grid-template-columns: repeat(2, 1fr); }
+  .fd-grid{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px){
+  .fd-header{ flex-direction:column; align-items:flex-start; }
+  .fd-kpis{ grid-template-columns: 1fr; }
+}

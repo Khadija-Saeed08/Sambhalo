@@ -1,0 +1,52 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.content {
+  margin-left: 240px;
+  margin-top: 64px;   
+  padding: 1.5rem;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed ~ .content {
+  margin-left: 72px;
+}
+
+.main-content {
+  margin-top: 64px;  
+  padding: 20px;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.no-padding {
+  padding: 0;
+  margin:0 ;
+}
+
+
+.with-sidebar .main-content {
+  margin-left: 240px; 
+}
+
+
+.with-sidebar .sidebar.collapsed ~ .main-content {
+  margin-left: 72px;
+}
+
+
+.no-sidebar .main-content {
+  margin-left: 0;
+}

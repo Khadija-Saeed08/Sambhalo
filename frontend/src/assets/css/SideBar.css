@@ -1,0 +1,126 @@
+.sidebar {
+  position: fixed;
+  top: 64px; /* start below navbar */
+  left: 0;
+  height: calc(100vh - 64px);
+  width: 240px;
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  transition: width 0.3s ease;
+  z-index: 100;
+}
+
+.sidebar.collapsed {
+  width: 72px;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.collapse-btn {
+  background: none;
+  border: none;
+  color: #f8fafc;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.collapse-btn:hover {
+  transform: scale(1.2);
+  color: #38bdf8;
+}
+
+/* Navigation Links */
+.sidebar-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  overflow-y: auto;
+}
+
+.sidebar-link {
+  padding: 0.9rem 1.5rem;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-left: 3px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #f1f5f9;
+  border-left: 3px solid #38bdf8; /* cyan accent */
+}
+
+/* Active Link */
+.sidebar-link.active {
+  background: rgba(56, 189, 248, 0.1);
+  color: #38bdf8;
+  font-weight: 600;
+  border-left: 3px solid #38bdf8;
+}
+
+/* Collapsed Links */
+.sidebar.collapsed .sidebar-link {
+  justify-content: center;
+  padding: 0.9rem 0;
+  font-size: 1rem;
+  border-left: none;
+}
+
+.sidebar.collapsed .sidebar-link.active {
+  border-left: none;
+  background: rgba(56, 189, 248, 0.15);
+}
+
+/* Smooth Text Hiding */
+.sidebar.collapsed .sidebar-link::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 72px;
+  background: #0f172a;
+  color: #f1f5f9;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-10px);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar.collapsed .sidebar-link:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scroll handling for many links */
+.sidebar-nav {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #334155 #0f172a;
+}
+
+.sidebar-nav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-nav::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 4px;
+}

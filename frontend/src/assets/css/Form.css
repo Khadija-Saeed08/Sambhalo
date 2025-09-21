@@ -1,0 +1,64 @@
+/* Form.css */
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto; /* centers form vertically with some top margin */
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.form-container h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.form-container .form-input { width: 100% !important; max-width: none; }
+
+.form-input:focus {
+  border-color: #4cafef; /* matches a finance/digital blue tone */
+  box-shadow: 0 0 5px rgba(76, 175, 239, 0.4);
+}
+
+.form-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4cafef; /* consistent blue accent */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: #399dd6;
+}
+
+.form-button:active {
+  transform: scale(0.98);
+}
+
+.loading-indicator {
+  margin-bottom: 1rem;
+}

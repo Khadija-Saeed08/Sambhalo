@@ -1,0 +1,39 @@
+.df-filter{
+  display:flex;
+  align-items:flex-end;
+  gap:12px;
+  background:#ffffff;
+  padding:10px;
+  border:1px solid var(--border);
+  border-radius:12px;
+}
+
+.df-field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.df-field label{
+  font-size:12px;
+  color:var(--muted);
+}
+
+.df-field input[type="date"]{
+  background:#ffffff;
+  color:var(--text);
+  border:1px solid #222834;
+  padding:8px 10px;
+  border-radius:8px;
+}
+
+.df-clear{
+  height:36px;
+  padding:0 12px;
+  background:#7c3aed;
+  color:#c7d2fe;
+  border:1px solid #243047;
+  border-radius:8px;
+  cursor:pointer;
+}
+.df-clear:hover{ background:#0f1420; }
